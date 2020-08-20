@@ -1,0 +1,92 @@
+@media (max-width:1000px) {
+    .pizza-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:840px) {
+    body {
+        flex-direction: column;
+    }
+    .pizza-area {
+        display:block;
+    }
+    .pizza-item {
+        max-width:100%;
+    }
+    header {
+        display:flex;
+    }
+    main {
+        padding-top:60px;
+    }
+
+    aside {
+        width:auto;
+        position:fixed;
+        left:100vw;
+        right:0;
+        top:0;
+        bottom:0;
+        transition: all ease .2s;
+    }
+    aside.show {
+        width:auto;
+    }
+    .cart--area {
+        width:100vw;
+    }
+
+    .menu-closer {
+        display:block;
+    }
+
+    .pizzaWindowArea {
+        justify-content:flex-start;
+        align-items: flex-start;
+    }
+
+    .pizzaWindowBody {
+        width:100vw;
+        display:block;
+        padding:20px;
+        border-radius:0;
+        box-shadow:none;
+        margin:0;
+    }
+
+    .pizzaBig img {
+        width: 75%;
+        height: auto;
+    }
+
+    .pizzaInfo h1 {
+        margin-top:20px;
+    }
+
+    .pizzaInfo--qtarea {
+        height:60px;
+    }
+    .pizzaInfo--qtarea button {
+        font-size:25px;
+        padding:0px 25px;
+    }
+    .pizzaInfo--qt {
+        line-height: 60px;
+        font-size:20px;
+    }
+    .pizzaInfo--addButton {
+        font-size:20px;
+        display:block;
+        text-align:center;
+        margin:30px auto;
+    }
+
+    .pizzaInfo--cancelButton {
+        display:none;
+    }
+    .pizzaInfo--cancelMobileButton {
+        display:block;
+        cursor: pointer;        
+    }
+}

@@ -1,0 +1,119 @@
+.pizzaBig {
+    flex:1;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.pizzaBig--back {
+    position:absolute;
+    width:30px;
+    height:30px;
+    background-color:#000;
+}
+.pizzaBig img {
+    height:400px;
+    width:auto;
+}
+.pizzaInfo {
+    flex:1;
+    font-family:'Hepta Slab', Helvetica, Arial;
+    padding-bottom:50px;
+}
+.pizzaInfo h1 {
+    margin-top:50px;
+}
+.pizzaInfo .pizzaInfo--desc {
+    font-size:15px;
+    color:#999;
+    margin-top:10px;
+    font-family:'Lato',Helvetica,Arial;
+}
+.pizzaInfo--sector {
+    color:#CCC;
+    text-transform: uppercase;
+    font-size:14px;
+    margin-top:30px;
+    margin-bottom:10px;
+}
+.pizzaInfo--sizes {
+    display:inline-flex;
+    border-radius:10px;
+    overflow:hidden;
+}
+.pizzaInfo--size {
+    padding:10px 15px;
+    color:#000;
+    background-color:#EEE;
+    font-size:13px;
+    font-weight: bold;
+    cursor:pointer;
+}
+.pizzaInfo--size:hover {
+    background-color:#CCC;
+}
+.pizzaInfo--size.selected {
+    background-color:#399ade;
+    color:#FFF;
+}
+.pizzaInfo--size.selected span {
+    color:#D6D6D6;
+}
+.pizzaInfo--size span {
+    font-size:12px;
+    color:#999;
+    font-weight: normal;
+}
+.pizzaInfo--price {
+    display:flex;
+    align-items:center;
+}
+.pizzaInfo--actualPrice {
+    font-size:28px;
+    margin-right:30px;
+}
+.pizzaInfo--qtarea {
+    display:inline-flex;
+    background-color:#EEE;
+    border-radius:10px;
+    height:30px;
+}
+.pizzaInfo--qtarea button {
+    border:0;
+    background-color:transparent;
+    font-size:17px;
+    outline:0;
+    cursor:pointer;
+    padding:0px 10px;
+    color:#333;
+}
+.pizzaInfo--qt {
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 0px 5px;
+    color:#000;
+}
+.pizzaInfo--addButton {
+    margin-top:30px;
+    padding:20px 30px;
+    border-radius:20px;
+    background-color:#48d05f;
+    color:#FFF;
+    display:inline-block;
+    cursor:pointer;
+    margin-right:30px;
+}
+.pizzaInfo--addButton:hover {
+    background-color:#32a345;
+}
+.pizzaInfo--cancelButton {
+    display:inline-block;
+    cursor:pointer;
+}
+.pizzaInfo--cancelMobileButton {
+    display:none;
+    height:40px;
+    text-align:center;
+    line-height: 40px;
+    margin-bottom:30px;
+}
